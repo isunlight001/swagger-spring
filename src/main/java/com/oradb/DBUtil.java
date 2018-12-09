@@ -4,19 +4,19 @@ import java.io.InputStream;
 import java.sql.*;
 import java.util.Properties;
 
-public class DbUtil {
+public class DBUtil {
     private static Connection con;
     private static String url;
     private static String user;
     private static String pwd;
 
-    public DbUtil() {
+    public DBUtil() {
 
     }
     static {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");/*如果是MySQL就改为Class.forName("com.mysql.jdbc.Driver");*/
-            InputStream is = DbUtil.class.getResourceAsStream("/db.properties");//db.properties 是一个用户配置文件传用户名密码
+            InputStream is = DBUtil.class.getResourceAsStream("/db.properties");//db.properties 是一个用户配置文件传用户名密码
             Properties prop=new Properties();
             prop.load(is);
             url=prop.getProperty("url");
