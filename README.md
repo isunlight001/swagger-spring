@@ -13,3 +13,7 @@ git push origin head:refs/for/master
 
 从服务器拉取文件覆盖本地
 git checkout -- file1
+将文件从暂存区取回
+git reset -- file1
+其他人修改了文件冲突commit失败
+git pull之后手工合并之后在进行add->commit->push操作
