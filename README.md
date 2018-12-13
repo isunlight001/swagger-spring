@@ -17,3 +17,7 @@ git checkout -- file1
 git reset -- file1
 其他人修改了文件冲突commit失败
 git pull之后手工合并之后在进行add->commit->push操作
+图解git：http://marklodato.github.io/visual-git-guide/index-zh-cn.html
+
+
+使用tomcact时需注意版本问题，tomcat7不能与spring4，5版本使用，45需使用tomcat8以上
